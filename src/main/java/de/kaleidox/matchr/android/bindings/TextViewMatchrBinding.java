@@ -16,7 +16,7 @@ import de.kaleidox.matchr.android.listener.ListenerManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.TextView;
-import me.xdrop.fuzzywuzzy.model.Result;
+import me.xdrop.matchr.model.Result;
 
 public class TextViewMatchrBinding<T> implements MatchrBinding<T> {
     private final List<ListenerManager<GenericListener<ResultsChangeEvent<T>>>> listenerManagers;

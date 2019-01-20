@@ -5,8 +5,8 @@ import java.util.List;
 
 import de.kaleidox.matchr.android.AndroidMatchr;
 
-import me.xdrop.fuzzywuzzy.FuzzyWuzzy;
-import me.xdrop.fuzzywuzzy.model.Result;
+import me.xdrop.matchr.Matchr;
+import me.xdrop.matchr.model.Result;
 
 /**
  * An interface for using the {@link AndroidMatchr} functionality.
@@ -18,14 +18,14 @@ import me.xdrop.fuzzywuzzy.model.Result;
  */
 public interface ResultProvider<T> {
     /**
-     * Interface method for {@linkplain FuzzyWuzzy FuzzyWuzzy-Search} methods.
-     * This method should call a method of any FuzzyWuzzy implementation.
+     * Interface method for {@linkplain Matchr Matchr-Search} methods.
+     * This method should call a method of any Matchr implementation.
      *
      * @param target  The target string.
      * @param options The possible options.
      *
      * @return A list of results.
-     * @see FuzzyWuzzy
+     * @see Matchr
      */
     List<Result<T>> fetch(String target, Collection<T> options);
 }
