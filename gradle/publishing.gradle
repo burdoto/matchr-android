@@ -7,7 +7,9 @@ project.getGradle().getTaskGraph().whenReady {
 }
 
 tasks.withType(PublishToMavenRepository) {
-    doFirst.test
+    doFirst {
+        test
+    }
 }
 
 publishing {
