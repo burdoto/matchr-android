@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
+
 import me.xdrop.fuzzywuzzy.FuzzyWuzzy;
 import me.xdrop.fuzzywuzzy.algorithms.Algorithm;
 import me.xdrop.fuzzywuzzy.algorithms.AlgorithmFactory;
@@ -23,6 +24,7 @@ public class ResultProviders {
      * @param withMethod           The scoringMethod to be used.
      * @param <T>                  Type-variable for the element type.
      * @param <A>                  Type-variable for the algorithm.
+     *
      * @return A new ResultProvider that only returns the best result.
      * @see FuzzyWuzzy#extractBest(String, Collection, StringMapper, ScoringMethod)
      */
@@ -51,6 +53,7 @@ public class ResultProviders {
      * @param withLimit            The maximum amount of results to return.
      * @param <T>                  Type-variable for the element type.
      * @param <A>                  Type-variable for the algorithm.
+     *
      * @return A new ResultProvider.
      * @see FuzzyWuzzy#extractLimited(String, Collection, StringMapper, ScoringMethod, int)
      */
@@ -80,6 +83,7 @@ public class ResultProviders {
      * @param withMethod           The scoringMethod to be used.
      * @param <T>                  Type-variable for the element type.
      * @param <A>                  Type-variable for the algorithm.
+     *
      * @return A new ResultProvider.
      * @see FuzzyWuzzy#extractAllSorted(String, Collection, StringMapper, ScoringMethod)
      */
@@ -107,6 +111,7 @@ public class ResultProviders {
      * @param withMethod           The scoringMethod to be used.
      * @param <T>                  Type-variable for the element type.
      * @param <A>                  Type-variable for the algorithm.
+     *
      * @return A new ResultProvider.
      * @see FuzzyWuzzy#extractAll(String, Collection, StringMapper, ScoringMethod)
      */

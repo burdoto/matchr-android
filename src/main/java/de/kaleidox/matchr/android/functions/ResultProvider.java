@@ -13,6 +13,7 @@ import me.xdrop.fuzzywuzzy.model.Result;
  * A variety of predefined ResultProviders can be found in {@link ResultProviders}.
  *
  * @param <T> Type of the returning results.
+ *
  * @see ResultProviders
  */
 public interface ResultProvider<T> {
@@ -22,6 +23,7 @@ public interface ResultProvider<T> {
      *
      * @param target  The target string.
      * @param options The possible options.
+     *
      * @return A list of results.
      * @see FuzzyWuzzy
      */

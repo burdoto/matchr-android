@@ -1,6 +1,7 @@
 package de.kaleidox.matchr.android.event;
 
 import java.util.List;
+
 import me.xdrop.fuzzywuzzy.model.Result;
 
 public class ResultsChangeEvent<T> extends Event {

@@ -1,19 +1,21 @@
 package de.kaleidox.matchr.android.bindings;
 
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
+
 import de.kaleidox.matchr.android.MatchrBinding;
 import de.kaleidox.matchr.android.event.ResultsChangeEvent;
+import de.kaleidox.matchr.android.functions.ResultProvider;
 import de.kaleidox.matchr.android.listener.GenericListener;
 import de.kaleidox.matchr.android.listener.ListenerManager;
-import de.kaleidox.matchr.android.functions.ResultProvider;
+
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.TextView;
 import me.xdrop.fuzzywuzzy.model.Result;
 
 public class TextViewMatchrBinding<T> implements MatchrBinding<T> {
