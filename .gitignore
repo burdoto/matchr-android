@@ -22,3 +22,5 @@ gradle-app.setting
 
 # Files that contain login credentials
 *.cred
+
+!libs/**
