@@ -33,26 +33,20 @@ task javadocJar(type: Jar) {
 compileJava.options.encoding = 'UTF-8'
 repositories.jcenter()
 
+sourceSets {
+    main.java.srcDirs = ["src\\main\\java"]
+    compat.java.srcDirs = ["src\\compat\\java"]
+    test.groovy.srcDirs = ["src\\test\\groovy"]
+}
+
 dependencies {
-    compileOnly project(':android-compat')
+    compileOnly sourceSets.compat.output // Android compiler module
+    
     compileOnly fileTree("libs") // Temporary dependency until Matchr is published in the new version.
     compileOnly 'com.intellij:annotations:12.0'
 
     testImplementation 'junit:junit:4.12'
     testCompile 'org.codehaus.groovy:groovy-all:2.4.14'
-}
-
-sourceSets {
-    main.java.srcDirs = ["src\\main\\java"]
-    test.groovy.srcDirs = ["src\\test\\groovy"]
-}
-
-project(':android-compat') {
-    sourceSets {
-        compat {
-            java.srcDirs = ["android-compat\\src"]
-        }
-    }
 }
 
 apply from: 'gradle/publishing.gradle'
