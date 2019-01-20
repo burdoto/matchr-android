@@ -1,9 +1,10 @@
-package me.xdrop.fuzzywuzzy.android;
+package de.kaleidox.matchr.android.android;
 
 import android.widget.TextView;
 import java.util.Collection;
-import me.xdrop.fuzzywuzzy.android.bindings.TextViewFuzzyBinding;
-import me.xdrop.fuzzywuzzy.functions.ResultProvider;
+
+import de.kaleidox.matchr.android.android.bindings.TextViewFuzzyBinding;
+import de.kaleidox.matchr.android.functions.ResultProvider;
 
 public class FuzzyDroid {
     public static <T> FuzzyBinding<T> attachFuzzy(TextView view,

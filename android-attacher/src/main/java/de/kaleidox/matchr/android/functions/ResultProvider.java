@@ -1,9 +1,11 @@
-package me.xdrop.fuzzywuzzy.functions;
+package de.kaleidox.matchr.android.functions;
 
 import java.util.Collection;
 import java.util.List;
+
+import de.kaleidox.matchr.android.android.FuzzyDroid;
+
 import me.xdrop.fuzzywuzzy.FuzzyWuzzy;
-import me.xdrop.fuzzywuzzy.android.FuzzyDroid;
 import me.xdrop.fuzzywuzzy.model.Result;
 
 /**

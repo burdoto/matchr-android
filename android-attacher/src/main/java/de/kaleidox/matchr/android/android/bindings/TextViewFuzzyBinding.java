@@ -1,4 +1,4 @@
-package me.xdrop.fuzzywuzzy.android.bindings;
+package de.kaleidox.matchr.android.android.bindings;
 
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -9,11 +9,11 @@ import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
-import me.xdrop.fuzzywuzzy.android.FuzzyBinding;
-import me.xdrop.fuzzywuzzy.android.event.ResultsChangeEvent;
-import me.xdrop.fuzzywuzzy.android.listener.GenericListener;
-import me.xdrop.fuzzywuzzy.android.listener.ListenerManager;
-import me.xdrop.fuzzywuzzy.functions.ResultProvider;
+import de.kaleidox.matchr.android.android.FuzzyBinding;
+import de.kaleidox.matchr.android.android.event.ResultsChangeEvent;
+import de.kaleidox.matchr.android.android.listener.GenericListener;
+import de.kaleidox.matchr.android.android.listener.ListenerManager;
+import de.kaleidox.matchr.android.functions.ResultProvider;
 import me.xdrop.fuzzywuzzy.model.Result;
 
 public class TextViewFuzzyBinding<T> implements FuzzyBinding<T> {

@@ -1,4 +1,4 @@
-package me.xdrop.fuzzywuzzy.functions;
+package de.kaleidox.matchr.android.functions;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -7,6 +7,7 @@ import java.util.Objects;
 import me.xdrop.fuzzywuzzy.FuzzyWuzzy;
 import me.xdrop.fuzzywuzzy.algorithms.Algorithm;
 import me.xdrop.fuzzywuzzy.algorithms.AlgorithmFactory;
+import me.xdrop.fuzzywuzzy.functions.StringMapper;
 import me.xdrop.fuzzywuzzy.model.Result;
 import me.xdrop.fuzzywuzzy.model.ScoringMethod;
 

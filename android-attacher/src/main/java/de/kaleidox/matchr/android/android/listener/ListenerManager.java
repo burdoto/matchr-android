@@ -1,4 +1,4 @@
-package me.xdrop.fuzzywuzzy.android.listener;
+package de.kaleidox.matchr.android.android.listener;
 
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;

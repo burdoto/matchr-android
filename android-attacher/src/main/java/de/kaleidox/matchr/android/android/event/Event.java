@@ -1,4 +1,4 @@
-package me.xdrop.fuzzywuzzy.android.event;
+package de.kaleidox.matchr.android.android.event;
 
 public abstract class Event {
     private final String cause;
