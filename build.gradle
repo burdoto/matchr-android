@@ -43,8 +43,8 @@ dependencies {
 }
 
 sourceSets {
-    main.java.srcDirs = ["android-attacher\\src\\main\\java"]
-    test.groovy.srcDirs = ["android-attacher\\src\\test\\groovy"]
+    main.java.srcDirs = ["src\\main\\java"]
+    test.groovy.srcDirs = ["src\\test\\groovy"]
 }
 
 project(':android-compat') {
