@@ -10,6 +10,6 @@ public final class AndroidMatchr {
     public static <T> MatchrBinding<T> attachFuzzy(TextView view,
                                                    Collection<T> options,
                                                    ResultProvider<T> resultProvider) {
-        return new TextViewMatchrBinding<>(view, resultProvider, options);
+        return new TextViewMatchrBinding<>(view, options, resultProvider);
     }
 }

@@ -23,7 +23,7 @@ public class TextViewMatchrBinding<T> implements MatchrBinding<T> {
     private final Collection<T> options;
     private List<Result<T>> prevResults;
 
-    public TextViewMatchrBinding(TextView textView, final ResultProvider<T> resultProvider, final Collection<T> options) {
+    public TextViewMatchrBinding(TextView textView, final Collection<T> options, final ResultProvider<T> resultProvider) {
         this.textView = textView;
         this.resultProvider = resultProvider;
         this.options = options;
