@@ -3,7 +3,7 @@ package de.kaleidox.matchr.android.functions;
 import java.util.Collection;
 import java.util.List;
 
-import de.kaleidox.matchr.android.android.FuzzyDroid;
+import de.kaleidox.matchr.android.FuzzyDroid;
 
 import me.xdrop.fuzzywuzzy.FuzzyWuzzy;
 import me.xdrop.fuzzywuzzy.model.Result;

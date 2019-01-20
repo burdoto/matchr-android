@@ -1,4 +1,4 @@
-package de.kaleidox.matchr.android.android.event;
+package de.kaleidox.matchr.android.event;
 
 public abstract class Event {
     private final String cause;

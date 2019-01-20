@@ -1,4 +1,4 @@
-package de.kaleidox.matchr.android.android.bindings;
+package de.kaleidox.matchr.android.bindings;
 
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -9,10 +9,10 @@ import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
-import de.kaleidox.matchr.android.android.FuzzyBinding;
-import de.kaleidox.matchr.android.android.event.ResultsChangeEvent;
-import de.kaleidox.matchr.android.android.listener.GenericListener;
-import de.kaleidox.matchr.android.android.listener.ListenerManager;
+import de.kaleidox.matchr.android.FuzzyBinding;
+import de.kaleidox.matchr.android.event.ResultsChangeEvent;
+import de.kaleidox.matchr.android.listener.GenericListener;
+import de.kaleidox.matchr.android.listener.ListenerManager;
 import de.kaleidox.matchr.android.functions.ResultProvider;
 import me.xdrop.fuzzywuzzy.model.Result;
 

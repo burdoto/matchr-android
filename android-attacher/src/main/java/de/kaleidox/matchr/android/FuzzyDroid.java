@@ -1,9 +1,9 @@
-package de.kaleidox.matchr.android.android;
+package de.kaleidox.matchr.android;
 
 import android.widget.TextView;
 import java.util.Collection;
 
-import de.kaleidox.matchr.android.android.bindings.TextViewFuzzyBinding;
+import de.kaleidox.matchr.android.bindings.TextViewFuzzyBinding;
 import de.kaleidox.matchr.android.functions.ResultProvider;
 
 public class FuzzyDroid {

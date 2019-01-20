@@ -1,4 +1,4 @@
-package de.kaleidox.matchr.android.android.event;
+package de.kaleidox.matchr.android.event;
 
 import java.util.List;
 import me.xdrop.fuzzywuzzy.model.Result;
