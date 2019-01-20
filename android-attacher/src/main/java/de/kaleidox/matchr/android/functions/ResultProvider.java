@@ -3,13 +3,13 @@ package de.kaleidox.matchr.android.functions;
 import java.util.Collection;
 import java.util.List;
 
-import de.kaleidox.matchr.android.FuzzyDroid;
+import de.kaleidox.matchr.android.AndroidMatchr;
 
 import me.xdrop.fuzzywuzzy.FuzzyWuzzy;
 import me.xdrop.fuzzywuzzy.model.Result;
 
 /**
- * An interface for using the {@link FuzzyDroid} functionality.
+ * An interface for using the {@link AndroidMatchr} functionality.
  * A variety of predefined ResultProviders can be found in {@link ResultProviders}.
  *
  * @param <T> Type of the returning results.

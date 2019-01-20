@@ -9,21 +9,21 @@ import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
-import de.kaleidox.matchr.android.FuzzyBinding;
+import de.kaleidox.matchr.android.MatchrBinding;
 import de.kaleidox.matchr.android.event.ResultsChangeEvent;
 import de.kaleidox.matchr.android.listener.GenericListener;
 import de.kaleidox.matchr.android.listener.ListenerManager;
 import de.kaleidox.matchr.android.functions.ResultProvider;
 import me.xdrop.fuzzywuzzy.model.Result;
 
-public class TextViewFuzzyBinding<T> implements FuzzyBinding<T> {
+public class TextViewMatchrBinding<T> implements MatchrBinding<T> {
     private final List<ListenerManager<GenericListener<ResultsChangeEvent<T>>>> listenerManagers;
     private final TextView textView;
     private final ResultProvider<T> resultProvider;
     private final Collection<T> options;
     private List<Result<T>> prevResults;
 
-    public TextViewFuzzyBinding(TextView textView, final ResultProvider<T> resultProvider, final Collection<T> options) {
+    public TextViewMatchrBinding(TextView textView, final ResultProvider<T> resultProvider, final Collection<T> options) {
         this.textView = textView;
         this.resultProvider = resultProvider;
         this.options = options;
