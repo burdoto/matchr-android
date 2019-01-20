@@ -1,0 +1,74 @@
+apply plugin: 'maven-publish'
+apply plugin: 'signing'
+apply plugin: "io.codearte.nexus-staging"
+
+project.getGradle().getTaskGraph().whenReady {
+    tasks.withType(GenerateMavenPom).destination = [file("$projectDir/pom.xml")]
+}
+
+tasks.withType(PublishToMavenRepository) {
+    doFirst {
+        test
+    }
+}
+
+publishing {
+
+    repositories {
+        maven {
+            url = snapshot
+                    ? "https://oss.sonatype.org/content/repositories/snapshots"
+                    : "https://oss.sonatype.org/service/local/staging/deploy/maven2"
+            name = "Sonatype"
+
+            credentials {
+                username sonatypeUsername
+                password sonatypePassword
+            }
+        }
+    }
+
+    publications {
+        mavenJava(MavenPublication) {
+            artifactId = artifactName
+            from components.java
+
+            artifact sourcesJar
+            artifact javadocJar
+
+            pom {
+                name = projectName
+                description = projectDescription
+                inceptionYear = '2019'
+
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id = "burdoto"
+                        name = "Tobias Burdow"
+                        email = "burdoto@outlook.com"
+                    }
+                }
+            }
+        }
+    }
+}
+
+signing {
+    useGpgCmd()
+    //noinspection GroovyAssignabilityCheck
+    sign publishing.publications.mavenJava
+}
+
+tasks.removeAll([promoteRepository, closeAndPromoteRepository, getStagingProfile])
+
+nexusStaging {
+    username sonatypeUsername.toString()
+    password sonatypePassword.toString()
+}

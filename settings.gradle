@@ -1,0 +1,4 @@
+rootProject.name = 'matchr-android'
+
+// Android compatibility module for compiling android-attacher module using gradle
+include ':android-compat'
