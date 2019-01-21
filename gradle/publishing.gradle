@@ -2,10 +2,6 @@ apply plugin: 'maven-publish'
 apply plugin: 'signing'
 apply plugin: "io.codearte.nexus-staging"
 
-project.getGradle().getTaskGraph().whenReady {
-    tasks.withType(GenerateMavenPom).forEach({task -> task.destination = [file("$projectDir/pom.xml")]})
-}
-
 tasks.withType(PublishToMavenRepository) {
     doFirst {
         test
@@ -13,7 +9,6 @@ tasks.withType(PublishToMavenRepository) {
 }
 
 publishing {
-
     repositories {
         maven {
             url = snapshot
@@ -58,6 +53,12 @@ publishing {
             }
         }
     }
+}
+
+task createGithubPom(type: GenerateMavenPom) {
+    //noinspection GroovyAssignabilityCheck -> false negative
+    pom publishing.publications.mavenJava.pom
+    destination = file("$rootDir/pom.xml")
 }
 
 signing {
