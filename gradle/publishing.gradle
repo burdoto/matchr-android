@@ -63,7 +63,7 @@ task createGithubPom(type: GenerateMavenPom) {
 
 signing {
     useGpgCmd()
-    //noinspection GroovyAssignabilityCheck
+    //noinspection GroovyAssignabilityCheck -> false negative
     sign publishing.publications.mavenJava
 }
 
