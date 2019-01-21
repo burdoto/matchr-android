@@ -46,9 +46,9 @@ sourceSets {
 
 dependencies {
     //implementation 'me.xdrop:matchr:1.0.0'
-    compileOnly sourceSets.compat.output // Android compiler module
-
     compileOnly fileTree("libs") // Temporary dependency until Matchr is published in the new version.
+    
+    compileOnly sourceSets.compat.output // Android compiler module
     compileOnly 'com.intellij:annotations:12.0'
 
     testImplementation sourceSets.main.output
