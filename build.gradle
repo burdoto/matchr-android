@@ -42,9 +42,9 @@ compileJava.options.encoding = 'UTF-8'
 repositories.jcenter()
 
 sourceSets {
-    main.java.srcDirs = ["src\\main\\java"]
-    compat.java.srcDirs = ["src\\compat\\java"]
-    test.groovy.srcDirs = ["src\\test\\groovy"]
+    main.java.srcDirs = ["src/main/java"]
+    compat.java.srcDirs = ["src/compat/java"]
+    test.groovy.srcDirs = ["src/test/groovy"]
 }
 
 dependencies {
