@@ -57,7 +57,7 @@ dependencies {
     testImplementation sourceSets.main.output
     testImplementation sourceSets.compat.output
     testImplementation 'junit:junit:4.12'
-    testImplementation 'org.easymock:easymock:3.6'
+    testImplementation 'org.easymock:easymock:4.1'
     testCompile 'org.codehaus.groovy:groovy-all:2.4.14'
 }
 
